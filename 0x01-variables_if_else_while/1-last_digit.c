@@ -2,7 +2,7 @@
 #include <time.h>
 #include <stdio.h>
 /**
- *  main -> assign a random number to the variable n each time it is executed and print the last digit of the number stored in the variable n
+ *  main - main function to generate a random number
  *  Return: Always 0 (Success)
  *
  */
@@ -11,7 +11,8 @@ int main(void)
 
 {
 	int n;
-	int x;				
+	int x;
+
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 	x = n % 10;
@@ -20,7 +21,6 @@ int main(void)
 	if (x > 5)
 	{
 	printf("and is greater than 5");														}
-
 	else if (x == 0)
 	{
 	printf("and is 0");
