@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * main - returns alphabets
+ * main - prints the alphabets in lowercase
  *
  * Returns: Always 0 (Success)
  */
@@ -16,5 +16,5 @@ int main(void)
 		ch++;
 	}
 	putchar('\n');
-	return(0);
+	return (0);
 }
