@@ -1,16 +1,17 @@
 #include <stdio.h>
-/**
- *main -> assign a random number to the variable n each time it is executed
- *and print the last digit of the number stored in the variable n
- *Return: Always 0 (Success)
- */
 
+/**
+ * main - main block
+ * Description: Print all numbers of base 10, starting from 0.
+ * Return: 0
+ */
 int main(void)
 {
-	int n;
-
-	for (n = 0; n < 10; n++)
-		putchar(n);
+	int i;
+	for (i = 0; i < 10; i++)
+	{
+		printf("%i", i);
+	}
 	putchar('\n');
 	return (0);
 }
