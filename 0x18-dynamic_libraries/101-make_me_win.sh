@@ -1,3 +1,3 @@
 #!/bin/bash
-export LD_PRELOAD=$PWD/win_num.so
-sleep 98
+wget -P /tmp https://github.com/eyoul/alx-low_level_programming/raw/main/0x18-dynamic_libraries/iwin.so
+export LD_PRELOAD=/tmp/iwin.so
