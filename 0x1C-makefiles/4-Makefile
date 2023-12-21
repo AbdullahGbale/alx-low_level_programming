@@ -14,9 +14,11 @@ all: $(NAME)
 $(NAME): $(OBJ)
         $(CC) $(CFLAGS) $(OBJ) -o $(NAME)
 
-clean: $(RM) *~ $(NAME)
+clean:
+	$(RM) *~ $(NAME)
 
-oclean: $(RM) $(OBJ)
+oclean:
+	$(RM) $(OBJ)
 
 fclean: clean oclean
 
