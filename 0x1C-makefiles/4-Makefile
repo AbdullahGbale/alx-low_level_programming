@@ -10,9 +10,9 @@ RM = rm -f
 
 CFLAGS = -Wall -Werror -Wextra -pedantic
 
-all: $(OBJ)
+all: $(NAME)
 
-school: $(OBJ)
+$(NAME): $(OBJ)
         $(CC) $(CFLAGS) $(OBJ) -o $(NAME)
 
 clean:
