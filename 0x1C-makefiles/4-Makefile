@@ -10,13 +10,13 @@ RM = rm -f
 
 CFLAGS = -Wall -Werror -Wextra -pedantic
 
-all: $(NAME)
+all: school
 
-$(NAME): $(OBJ)
-        $(CC) $(CFLAGS) $(OBJ) -o $(NAME)
+school: $(OBJ)
+	$(CC) $(CFLAGS) -c -o $(OBJ) $(SRC)
 
 clean:
-	$(RM) *~ $(NAME)
+	$(RM) $(NAME) *~
 
 oclean:
 	$(RM) $(OBJ)
